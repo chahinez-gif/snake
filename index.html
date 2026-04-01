@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snake</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🐍 SNAKE</h1>
+    <div class="scoreboard">
+      <div class="score-box">
+        <span class="label">SCORE</span>
+        <span class="value" id="score">0</span>
+      </div>
+      <div class="score-box">
+        <span class="label">MEILLEUR</span>
+        <span class="value" id="best">0</span>
+      </div>
+      <div class="score-box">
+        <span class="label">NIVEAU</span>
+        <span class="value" id="level">1</span>
+      </div>
+    </div>
+    <div class="canvas-wrapper">
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <div class="overlay" id="overlay">
+        <div class="overlay-content">
+          <p id="overlay-title">SNAKE</p>
+          <p id="overlay-sub">Appuie sur ESPACE pour jouer</p>
+          <button id="startBtn">▶ JOUER</button>
+        </div>
+      </div>
+    </div>
+    <div class="controls-hint">
+      <span>⬆⬇⬅➡ ou ZQSD pour diriger</span>
+      <span>ESPACE pour pause</span>
+    </div>
+    <!-- Contrôles mobile -->
+    <div class="mobile-controls">
+      <div class="mobile-row">
+        <button class="mobile-btn" id="btnUp">▲</button>
+      </div>
+      <div class="mobile-row">
+        <button class="mobile-btn" id="btnLeft">◀</button>
+        <button class="mobile-btn" id="btnDown">▼</button>
+        <button class="mobile-btn" id="btnRight">▶</button>
+      </div>
+    </div>
+  </div>
+  <script src="snake.js"></script>
+</body>
+</html>
