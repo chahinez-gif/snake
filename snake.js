@@ -4,7 +4,7 @@ const CELL = 400 / GRID; // 20px par cellule
 
 // ─── État du jeu ─────────────────────────────────────────────────
 let snake, direction, nextDir, food, score, best, level, speed, gameLoop, running, paused;
-
+//test
 // ─── Éléments DOM ────────────────────────────────────────────────
 const canvas   = document.getElementById('gameCanvas');
 const ctx      = canvas.getContext('2d');
